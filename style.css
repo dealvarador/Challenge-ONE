@@ -1,0 +1,385 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: #AABBCC;
+}
+
+.contenedor {
+    margin: auto;
+    width: 960px;
+    height: 650px;
+    padding: 5px;
+}
+
+.logo {
+    width: 60%;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    float: left;
+    padding: 1%;
+}
+
+.boton-derecho {
+
+    width: 35%;
+    height: 15%;
+    background: white;
+}
+
+.logoimagen {
+    margin-top: 5%;
+    margin-left: 5%;
+    float: inherit;
+}
+
+.izquierdo {
+    float: left;
+    width: 65%;
+    height: 85%;
+}
+
+.derecho {
+    float: right;
+    width: 35%;
+    height: 85%;
+    background: white;
+    border-radius: 24px 24px 0 0;
+    margin-left: 0;
+}
+
+.botones {
+    float: left;
+    width: 65%;
+    height: 15%;
+}
+
+.boton-derecho {
+    float: right;
+    width: 35%;
+    height: 15%;
+    border-radius: 0 0 24px 24px;
+}
+
+.cajasinencriptar {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    background: #AABBCC;
+    border-radius: 24px 24px 0 0;
+    border-style: none;
+    float: left;
+    width: 90%;
+    color: #0a3871;
+    font-size: 20px;
+    outline: none;
+    resize: none;
+}
+
+#advertencia-escritura {
+    margin-left: 2%;
+    margin-top: 1%;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+#btnEncriptar {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 1%;
+    width: 300px;
+    height: 67px;
+    background: #0a3871;
+    border-radius: 24px;
+    padding: 24px;
+    gap: 8px;
+}
+
+#btnDesencriptar {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 1%;
+    width: 300px;
+    height: 67px;
+    background: #D8DFE8;
+    border-radius: 24px;
+    padding: 24px;
+    gap: 8px;
+}
+
+.cajaencriptada {
+    margin-top: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 10px;
+    background: white;
+    border-style: none;
+    border-radius: 24px 24px 0 0;
+    float: left;
+    width: 90%;
+    color: #0a3871;
+    font-size: 20px;
+    outline: none;
+    text-align: center;
+    resize: none;
+}
+
+#imgMuneco {
+    margin-top: 18%;
+    width: 90%;
+    height: 50%;
+    margin-left: 2%;
+}
+
+#noSeEncontroTexto {
+    text-align: center;
+    font-size: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#btnCopiar {
+    margin-top: 13px;
+    margin-left: 20px;
+    margin-right: 15px;
+    margin-bottom: 0;
+    width: 300px;
+    height: 67px;
+    background: #D8DFE8;
+    border-radius: 24px;
+    padding: 24px;
+    gap: 8px;
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    #imgMuneco {
+        display: block;
+    }
+
+    .derecho {
+        float: right;
+        width: 35%;
+        height: 85%;
+        background: white;
+        border-radius: 24px 24px 0 0;
+        margin-left: 0;
+    }
+
+}
+
+/* Adaptando a Telefonos Moviles */
+@media screen and ((min-width: 375px) and (max-width: 768px)) {
+
+    .contenedor,
+    .izquierdo,
+    .derecho,
+    .botones,
+    .boton-derecho {
+        width: auto;
+        height: auto;
+        float: none;
+    }
+
+    .derecho {
+        width: auto;
+        height: 300px;
+        float: none;
+    }
+
+
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor div:nth-of-type(1) {
+        order: 1;
+    }
+
+    .contenedor div:nth-of-type(2) {
+        order: 2;
+    }
+
+    .contenedor div:nth-of-type(3) {
+        order: 4;
+    }
+
+    .contenedor div:nth-of-type(4) {
+        order: 3;
+    }
+
+    .contenedor div:nth-of-type(5) {
+        order: 5;
+    }
+
+
+    .cajasinencriptar {
+        width: 88%;
+        height: auto;
+        margin-top: 5px;
+        margin-left: 3%;
+        margin-right: 3%;
+
+    }
+
+    #btnEncriptar {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1;
+        width: 47%;
+    }
+
+    #btnDesencriptar {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1%;
+        width: 47%;
+        height: 67px;
+    }
+
+    #imgMuneco {
+        display: none;
+    }
+
+    .cajaencriptada {
+        margin-top: 1%;
+        margin-left: 3%;
+        margin-right: 3%;
+        padding: 10px;
+        width: 90%;
+        height: auto;
+        background: white;
+        border-style: none;
+        border-radius: 24px 24px 0 0;
+        float: left;
+
+        color: #0a3871;
+        font-size: 20px;
+        outline: none;
+        text-align: center;
+    }
+
+    #btnCopiar {
+        margin-top: 13px;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        margin-bottom: 0;
+        width: 95%;
+        display: none;
+
+    }
+}
+
+
+/* Adaptando a Telefonos Moviles */
+@media screen and (max-width: 375px) {
+
+    .contenedor,
+    .izquierdo,
+    .botones,
+    .boton-derecho {
+        width: auto;
+        height: auto;
+        position: auto;
+        float: none;
+    }
+
+
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .derecho {
+        width: auto;
+        height: 400px;
+        float: none;
+    }
+
+    .contenedor div:nth-of-type(1) {
+        order: 1;
+    }
+
+    .contenedor div:nth-of-type(2) {
+        order: 2;
+    }
+
+    .contenedor div:nth-of-type(3) {
+        order: 4;
+    }
+
+    .contenedor div:nth-of-type(4) {
+        order: 3;
+    }
+
+    .contenedor div:nth-of-type(5) {
+        order: 5;
+    }
+
+
+    .cajasinencriptar {
+        width: 88%;
+        height: auto;
+        margin-top: 5px;
+        margin-left: 3%;
+        margin-right: 3%;
+
+    }
+
+    /*.derecho {
+        width: auto;
+        height: 100%;
+        float: none;
+
+    }*/
+
+    #btnEncriptar {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 1%;
+        width: 90%;
+    }
+
+    #btnDesencriptar {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 1%;
+        width: 90%;
+        height: 67px;
+    }
+
+    #imgMuneco {
+        display: none;
+    }
+
+    .cajaencriptada {
+        margin-top: 1%;
+        margin-left: 3%;
+        margin-right: 3%;
+        padding: 10px;
+        width: 90%;
+        height: 300px;
+        background: white;
+        border-style: none;
+        border-radius: 24px 24px 0 0;
+        float: left;
+
+        color: #0a3871;
+        font-size: 20px;
+        outline: none;
+        text-align: center;
+    }
+
+    #btnCopiar {
+        margin-top: 13px;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        margin-bottom: 0;
+        width: 95%;
+        display: none;
+
+    }
+}

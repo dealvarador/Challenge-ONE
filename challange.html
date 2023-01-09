@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Encriptador Challenge 1</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+  <div class="contenedor">
+    <div class="logo">
+      <img class="logoimgagen" src="recursos/Logo.png" alt="Este es el logo">
+    </div>
+    <div class="izquierdo">
+      <textarea class="cajasinencriptar" onkeypress="return check(event)" placeholder="Ingrese el texto aqui" cols="200"
+        rows="16" name="" id="txtsinEncriptar"></textarea>
+    </div>
+    <div class="derecho">
+      <img id="imgMuneco" src="recursos/Muneco.png" alt="Dibujo">
+      <h1 id="noSeEncontroTexto">Ningun mensaje fue encontrado</h1>
+      <textarea class="cajaencriptada" cols="10" rows="2" name=""
+        id="txtEncriptado">Ingrese el texto que desee encriptar o desencriptar</textarea>
+    </div>
+    <div class="botones">
+      <p id="advertencia-escritura">&#9888; Solo letras minúsculas y sin acentos</p>
+      <button type="button" id="btnEncriptar" onclick="encriptarTexto()">Encriptar</button>
+      <button type="button" id="btnDesencriptar" onclick="desencriptarTexto()">Desencriptar</button>
+    </div>
+    <div class="boton-derecho" style="height: 15%;">
+      <p></p>
+      <button type="button" id="btnCopiar" onclick="copiarTexto()">Copiar</button>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -37,7 +37,6 @@ function cambiarElementosPorResolucion() {
   if (mediaQuery1.matches) {
     document.getElementById("imgMuneco").style.display = "none";
     txtEncriptado.style.height = "auto"
-    // div.style.height = '600px';
   }
 
   // Segunda condición: resolución menor a 375px
@@ -45,8 +44,6 @@ function cambiarElementosPorResolucion() {
   if (mediaQuery2.matches) {
     document.getElementById("imgMuneco").style.display = "none";
     txtEncriptado.style.height = "auto"
-    // div.style.height = '500px';
-
   }
   // Tercera condición: resolución mayor a 768px
   const mediaQuery3 = window.matchMedia('(min-width: 768px)');
